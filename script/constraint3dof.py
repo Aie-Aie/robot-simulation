@@ -6,11 +6,13 @@ import mathutils
 joint1	= 0
 joint2 	= 0
 
-theta1 = 45
-theta2 = 45
+#theta1 = 45
+#theta2 = 45
 rotz = 0
 rotz2 = 0
 
+theta1 = float(input("Theta1: "))
+theta2 = float(input("Theta2: "))
 def rotate():
     
 
@@ -87,13 +89,13 @@ def rotate():
 			#stops the joint1
 			owner.channels['Bone.001'].joint_rotation = mathutils.Vector([0, 0, joint1])
 			if (theta2 >= 0):
-				
-				if (joint2 < constjoint2) and (rotz2 <= theta2):
+				#positive angle
+				if (joint2 < constjoint2) and (theta2 >= rotz2):
 					joint2 = joint2 - math.pi/1000
 					rotz2 = getmotionjoint2(theta2, joint2)
+				#negative angle		
+				elif(joint2 < constjoint2) and ()
 
-
-				
 
 			elif(theta2 < 0):
 				owner.channels['Bone.002'].joint_rotation = mathutils.Vector([0, 0, joint2])
