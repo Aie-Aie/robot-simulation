@@ -108,10 +108,6 @@ def ik():
 		ang2 = angnew[1][0]
 		ang1 = angnew[0][0]
 		
-		
-
-		print("new angle")
-		print(math.degrees(angnew))
 
 return angnew		
 

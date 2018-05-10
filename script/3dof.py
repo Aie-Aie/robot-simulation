@@ -49,4 +49,7 @@ def rotate():
 
 		
 
-	print(ik.ik())
+	ang = ik.ik()
+	print(ang[1])
+	print(ang[0])
+	
