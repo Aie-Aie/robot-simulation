@@ -84,7 +84,11 @@ def rotate():
 				if (joint2 < constjoint2) and (theta2 >= rotz2):
 					joint2 = joint2 - (math.pi/1000) * 2.5
 					rotz2 = getmotionjoint2(theta2, joint2)
+<<<<<<< HEAD
+					#print(rotz2)	
+=======
 					print(rotz2)	
+>>>>>>> dde81bf5fd95bb421440abc1a4f9acdb28e5e207
 				#negative angle		
 			
 
